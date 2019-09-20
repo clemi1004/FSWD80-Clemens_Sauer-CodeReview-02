@@ -1,0 +1,166 @@
+$setting: 90deg, rgba(8,40,238,1) 0%, rgba(0,215,255,1) 45%, rgba(238,238,8,1) 100%
+$setting2: 0px 0px 60px 5px rgba(0,0,0,0.5)
+
+// full_body layout
+body
+	// background-image: linear-gradient($setting)
+	// -webkit-linear-gradient: $setting
+	// -moz-linear-gradient: $setting
+	// -ms-linear-gradient: $setting
+	font-family: Arial
+	background-color: white
+
+// header_background_red
+header
+	background-color: #601316
+
+.header_banner1
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	padding: 15px
+
+.header_logo
+	display: flex
+	flex: 2
+
+.banner_1
+	margin-top: 10px
+
+// header_color_white_and_bold
+#header_1
+	color: #ffffff
+	font-weight: bold
+	font-size: 30px
+
+//circle
+.header_2 > p
+	@extend #header_1
+	background-color: #be0b0b
+	width: 50px
+	text-align: center
+	vertical-align: middle
+	border-radius: 50%
+	padding: 2px
+
+.nav_bar
+	background-color: black
+	font-size: 25px
+	padding: 10px
+
+.nav_bar_text > a
+	color: #ffffff
+	text-decoration: none
+	padding: 5px
+
+#date
+	text-align: right
+	font-size: 12px
+	margin: 0
+	padding: 0
+	line-height: 8px
+	border: 5px solid black
+
+.grouping_news
+	background-color: lightgrey
+	margin-left: 10px
+	font-size: 25px
+	padding-left: 10px
+
+.grouping_news_2
+	@extend .grouping_news
+	margin-left: 0px
+	margin-right: 20px
+
+.container_pics_FSWD
+	display: flex
+	justify-content: space-between
+	border: 5px solid black
+
+.container_pics
+	flex: 2
+	border: 5px solid green
+
+.pics_1
+	display: flex
+	padding: 5px
+	border: 5px solid blue
+
+.pics_2
+	@extend .pics_1
+
+.pics
+	display: flex
+	flex-direction: column
+	border: 5px solid red
+
+.container_pics img
+	width: 560px
+
+.titles
+	background-color: black
+	color: #ffffff
+	font-size: 30px
+	padding-top: 10px
+	padding-bottom: 10px
+
+.banner_2 
+	object-fit: cover
+	border: 5px solid orange
+
+.banner_2 img
+	height: 100%
+	width: 100%
+
+// h1
+// 	font-weight: bold
+// 	text-transform: uppercase
+// 	text-align: center
+// 	color: #d92020
+// 	font-size: 40px
+
+// h2
+// 	@extend h1
+// 	font-size: 30px
+// 	color: blue
+
+// .Africa
+// 	display: flex
+// 	flex-wrap: wrap
+
+// .Europe
+// 	@extend .Africa
+
+// .USA
+// 	@extend .Africa
+
+// .pictures img
+// 	width: 400px
+// 	height: 300px
+// 	padding: 3px
+// 	-webkit-box-shadow: $setting2
+// 	-moz-box-shadow: $setting2
+// 	box-shadow: $setting2
+
+// .pictures p
+// 	text-align: center
+// 	font-weight: bold
+
+
+// @media screen and (max-width: 480px)
+// 	.pictures img
+// 		width: 177.78px
+// 		height: 133.33px
+// 		padding: 1.33px
+
+// @media screen and (min-width: 481px) and (max-width: 1200px) 
+// 	.pictures img
+// 		width: 266.67px
+// 		height: 200px
+// 		padding: 2px
+
+// @media screen and (min-width:1201px)
+// 	.pictures img
+// 		width: 400px
+// 		height: 300px
+// 		padding: 3px
