@@ -46,8 +46,7 @@ header {
   font-size: 12px;
   margin: 0px;
   padding: 0px;
-  line-height: 8px;
-  border: 5px solid yellow; }
+  line-height: 8px; }
 
 .grouping_news, .grouping_news_2 {
   background-color: lightgrey;
@@ -61,22 +60,19 @@ header {
 
 .container_pics_FSWD {
   display: flex;
-  justify-content: space-between;
-  border: 5px solid black; }
+  justify-content: space-between; }
 
 .container_pics {
-  flex: 2;
-  border: 5px solid green; }
+  flex: 2; }
 
 .pics_1, .pics_2 {
   display: flex;
-  padding: 5px;
-  border: 5px solid blue; }
+  padding: 5px; }
 
 .pics, .pics_5 {
   display: flex;
   flex-direction: column;
-  border: 5px solid red; }
+  padding: 5px; }
 
 #only_mobile {
   display: none; }
@@ -96,8 +92,7 @@ header {
 
 .banner_2 {
   object-fit: cover;
-  width: 150px;
-  border: 5px solid orange; }
+  width: 150px; }
 
 .banner_2 img {
   height: 100%;
@@ -105,7 +100,6 @@ header {
 
 .container_2 {
   text-align: center;
-  border: 5px solid black;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
@@ -115,20 +109,17 @@ header {
   width: 100%; }
 
 .container_3 {
-  display: flex;
-  border: 5px solid violet; }
+  display: flex; }
 
 .container_pics_FSWD_2 {
   display: flex;
   flex: 2;
-  justify-content: space-between;
-  border: 5px solid blue; }
+  justify-content: space-between; }
 
 .container_3_pics {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border: 5px solid green; }
+  padding: 20px; }
 
 .container_3 img {
   width: 100%;
@@ -137,8 +128,7 @@ header {
 
 .banner_4 {
   text-align: left;
-  width: 150px;
-  border: 5px solid orange; }
+  width: 150px; }
 
 .banner_4 img {
   height: 100%;
@@ -157,15 +147,14 @@ header {
 
 .footer_logo_footer {
   justify-content: flex-end;
-  text-align: right;
-  border: 5px solid orange; }
+  text-align: right; }
 
 .copyright {
   color: white;
   text-align: center;
   padding-bottom: 2px; }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .banner_1 {
     display: none; }
 
