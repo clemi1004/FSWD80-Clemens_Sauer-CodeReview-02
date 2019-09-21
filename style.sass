@@ -1,12 +1,5 @@
-$setting: 90deg, rgba(8,40,238,1) 0%, rgba(0,215,255,1) 45%, rgba(238,238,8,1) 100%
-$setting2: 0px 0px 60px 5px rgba(0,0,0,0.5)
-
 // full_body layout
 body
-	// background-image: linear-gradient($setting)
-	// -webkit-linear-gradient: $setting
-	// -moz-linear-gradient: $setting
-	// -ms-linear-gradient: $setting
 	font-family: Arial
 	background-color: white
 
@@ -14,28 +7,31 @@ body
 header
 	background-color: #601316
 
+// Flex box Header
 .header_banner1
 	display: flex
 	flex-direction: row
 	justify-content: space-between
 	padding: 15px
 
+// Flexbox Logo
 .header_logo
 	display: flex
 	flex: 2
 
+// Full Stack Web Developer Banner right top
 .banner_1
 	margin-top: 10px
 
 // header_color_white_and_bold
-#header_1
+.header_1
 	color: #ffffff
 	font-weight: bold
 	font-size: 30px
 
 //circle
 .header_2 > p
-	@extend #header_1
+	@extend .header_1
 	background-color: #be0b0b
 	width: 50px
 	text-align: center
@@ -43,120 +39,292 @@ header
 	border-radius: 50%
 	padding: 2px
 
+//Nav Bar
 .nav_bar
 	background-color: black
 	font-size: 25px
 	padding: 10px
 
+//Formating Nav Bar Text
 .nav_bar_text > a
 	color: #ffffff
 	text-decoration: none
 	padding: 5px
 
+//Formating and position date
 #date
 	text-align: right
 	font-size: 12px
 	margin: 0px
 	padding: 0px
 	line-height: 8px
-	border: 5px solid black
+	border: 5px solid yellow
 
+//Header Top News position and Formatting
 .grouping_news
 	background-color: lightgrey
 	margin-left: 10px
 	font-size: 27px
 	padding-left: 10px
 
+//Formating Popular News line
 .grouping_news_2
 	@extend .grouping_news
 	margin-left: 0px
 	margin-right: 20px
 
+//Largest container containing all items in section1
 .container_pics_FSWD
 	display: flex
 	justify-content: space-between
 	border: 5px solid black
 
+//container left side pics/header(Popular)
 .container_pics
 	flex: 2
 	border: 5px solid green
 
+//Container of pics
 .pics_1
 	display: flex
 	padding: 5px
 	border: 5px solid blue
 
+//same as above 
 .pics_2
 	@extend .pics_1
 
+//each pic is a div containing text and jpg
 .pics
 	display: flex
 	flex-direction: column
 	border: 5px solid red
-	display: block
 
+//show only pic in mobile
+#only_mobile
+	display: none
+
+//formatting size of img and specific height
 .container_pics img
 	width: 100%
 	height: 200px
 	object-fit: cover
 
+//formatting titles of img and background
 .titles
 	background-color: black
 	color: #ffffff
-	font-size: 30px
+	font-size: 20px
 	margin-top: 0px
 	padding-top: 10px
 	padding-bottom: 10px
 
+//FSWD banner container formatting
 .banner_2 
 	object-fit: cover
 	width: 150px
 	border: 5px solid orange
 
+//Size of banner img
 .banner_2 img
 	height: 100%
 	width: 100%
 
-// h1
-// 	font-weight: bold
-// 	text-transform: uppercase
-// 	text-align: center
-// 	color: #d92020
-// 	font-size: 40px
+//middle banner padding formatting etc.
+.container_2
+	text-align: center
+	border: 5px solid black
+	padding-left: 40px
+	padding-right: 40px
+	padding-top: 10px
+	padding-bottom: 10px
 
-// h2
-// 	@extend h1
-// 	font-size: 30px
-// 	color: blue
+//middle banner always 100% width
+.container_2 img
+	width: 100%
 
-// .Africa
-// 	display: flex
-// 	flex-wrap: wrap
+//Largest container containing all items in section1
+.container_3
+	display: flex
+	border: 5px solid violet
 
-// .Europe
-// 	@extend .Africa
+//container includes pics
+.container_pics_FSWD_2
+	display: flex
+	flex: 2
+	justify-content: space-between
+	border: 5px solid blue
 
-// .USA
-// 	@extend .Africa
+//container columns for pics
+.container_3_pics
+	display: flex
+	flex-direction: column
+	padding: 20px
+	border: 5px solid green
 
-// .pictures img
-// 	width: 400px
-// 	height: 300px
-// 	padding: 3px
-// 	-webkit-box-shadow: $setting2
-// 	-moz-box-shadow: $setting2
-// 	box-shadow: $setting2
+//pics formatting
+.pics_5
+	@extend .pics
 
-// .pictures p
-// 	text-align: center
-// 	font-weight: bold
+//formatting size of images in container 3 
+.container_3 img
+	width: 100%
+	height: 80%
+	object-fit: fill
+
+//formtting size of container from banner_4
+.banner_4 
+	text-align: left
+	width: 150px
+	border: 5px solid orange
+
+//formatting banner_4 img size
+.banner_4 img
+	height: 100%
+	width: 100%
+
+//Nav Bar 2
+.nav_bar_2
+	@extend .nav_bar
+	font-size: 20px
+
+//Formating Nav Bar 2 Text, extending was not possible
+.nav_bar_text_2 > a
+	color: #ffffff
+	text-decoration: none
+	padding: 5px
+
+//Footer background color
+.footer_banner_footer
+	background-color: black
+
+//Footer logo and alignment
+.footer_logo_footer
+	@extend .header_logo
+	justify-content: flex-end
+	text-align: right
+	border: 5px solid orange
+
+//Copyright Clemens
+.copyright
+	color: white
+	text-align: center
+	padding-bottom: 2px
+
+//media section
+
+//mobile_max-width 480px
+@media screen and (max-width: 480px)
+	//no display banner_1
+	.banner_1
+		display: none
+
+	//nav_bar smaller different padding
+	.nav_bar
+		padding-left: 45px
+		padding-top: 5px
+		padding-bottom: 5px
+
+	//different padding for banner
+	.header_banner1
+		padding-top: 2px
+		padding-bottom: 2px
+
+	//don't show date
+	#date
+		display: none
+
+	//not needed in mobile
+	.container_pics_FSWD
+		all: unset
+
+	//smaller titles
+	.titles
+		font-size: 12px
+
+	//not needed in mobile
+	.container_pics
+		all: unset
+
+	//flex box ==> wrap
+	.pics_1
+		display: flex
+		flex-wrap: wrap
+
+	//flex box ==> wrap under popular
+	.pics_2
+		display: flex
+		flex-wrap: wrap
+
+	//flex wrap 2 next each other
+	.pics
+		width: 44%
+		padding: 5px
+
+	//different size for pics ==> smaller
+	.container_pics img
+		width: 100%
+		height: 125px
+
+	//only shown mobile ==> need all information due to id
+	#only_mobile
+		all: unset
+		display: flex
+		flex-wrap: wrap	
+		width: 44%
+		padding: 5px
+		margin-left: 10px
+		object-fit: contain
+
+	//size of only shown mobile img
+	#only_mobile img
+		height: 200px
+
+	//no margin-right for banner2 in mobile_version
+	.grouping_news_2
+		margin-right: 0px
+
+	//Banner not needed
+	.banner_2
+		display: none
+
+	//how to become developer not needed in mobile version
+	.container_2
+		display: none
+
+	//not needed online
+	.container_3
+		all: unset
+
+	//smaller padding
+	.container_3_pics
+		padding: 8px
+
+	//size of pictures
+	.container_3_pics img
+		width: 100%
+		height: 125px
+
+	//delete formatting
+	.pics_5
+		all: unset
+
+	//banner not needed
+	.banner_4
+		display: none
+
+	//Nav Bar 2 smaller font and different padding-left
+	.nav_bar_2
+		padding-left: 23%
+		padding-top: 5px
+		padding-bottom: 5px
+		font-size: 18px
+
+	//Footer logo and alignment center in mobile versio
+	.footer_logo_footer
+		justify-content: center
 
 
-// @media screen and (max-width: 480px)
-// 	.pictures img
-// 		width: 177.78px
-// 		height: 133.33px
-// 		padding: 1.33px
 
 // @media screen and (min-width: 481px) and (max-width: 1200px) 
 // 	.pictures img
